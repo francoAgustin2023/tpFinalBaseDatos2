@@ -15,17 +15,18 @@ Para ejecutar los programas primero es necesario crear un cluster HDFS y subir l
    pip install -r requirements.txt
    ```
 5. Crear un directorio en HDFS:
-  ```
-  hdfs dfs -mkdir /formula1
-  ```
+   ```
+   hdfs dfs -mkdir /formula1
+   ```
 4. Copiar los archivos de datos dentro del direcorio:
-  ```
-  hdfs dfs -put <ruta-al-proyecto>/datafile/pilotos.csv /formula1
-  ```
-5. Ejecutar el programa. Se creara un archivo dentro de /formula1 llamado resultado_pilotos.csv.
-  ```
-  spark-submit race_results_analysis.py
-  ```
+   ```
+   hdfs dfs -put <ruta-al-proyecto>/datafile/pilotos.csv /formula1
+   ```
+5. Ejecutar el programa. 
+   ```
+   spark-submit race_results_analysis.py
+   ```
+   Se creara un archivo dentro de /formula1 llamado resultado_pilotos.csv.
 6. Utilizar la consola interactiva de pyspark para verificar los resultados.
 
 
