@@ -24,7 +24,7 @@ Para ejecutar los programas primero es necesario crear un cluster HDFS y subir l
    ```
 5. Ejecutar el programa. 
    ```
-   spark-submit race_results_analysis.py
+   spark-submit championship_results_analysis.py
    ```
    Se creara un archivo dentro de /formula1 llamado resultado_pilotos.csv.
 6. Utilizar la consola interactiva de pyspark para verificar los resultados.
