@@ -15,14 +15,33 @@ Para ejecutar los programas primero es necesario crear un cluster HDFS y subir l
    pip install -r requirements.txt
    ```
 5. Crear un directorio en HDFS:
+
    ```
-   hdfs dfs -mkdir /formula1
+   hdfs dfs -mkdir /datos
    ```
-4. Copiar los archivos de datos dentro del direcorio:
+
+4. Copiar los archivos de datos dentro del directorio:
    ```
-   hdfs dfs -put <ruta-al-proyecto>/data_files/pilotos.csv /formula1
+   hdfs dfs -put <ruta-al-proyecto>/data_files libro.txt /datos
    ```
-5. Ejecutar el programa. 
+   ```
+   hdfs dfs -put <ruta-al-proyecto>/data_files pilotos.csv /datos
+   ```
+
+5. Ejecutar el programa deseado. 
+   
+   a. Programa simple que procesa datos distribuidos usando como base el libro en txt: 
+   
+   ```
+   spark-submit programa.py
+   ```
+   b. Programa que trabaja con operaciones básicas como map, filter y reduce. Usa tambien el libro:
+
+   ```
+   spark-submit operacionesBasicas.py
+   ```
+   c. Programa que realiza un análisis simple de un conjunto de datos de muestra. Usa un CCV con datos de Fórmula 1
+
    ```
    spark-submit race_results_analysis.py
    ```
