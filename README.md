@@ -20,7 +20,7 @@ Para ejecutar los programas primero es necesario crear un cluster HDFS y subir l
    ```
 4. Copiar los archivos de datos dentro del direcorio:
    ```
-   hdfs dfs -put <ruta-al-proyecto>/datafile/pilotos.csv /formula1
+   hdfs dfs -put <ruta-al-proyecto>/data_files/pilotos.csv /formula1
    ```
 5. Ejecutar el programa. 
    ```
