@@ -30,10 +30,10 @@ Para ejecutar los programas primero es necesario crear un cluster HDFS y subir l
 
 5. Ejecutar el programa deseado. 
    
-   a. Programa simple que procesa datos distribuidos usando como base el libro en txt: 
+   a. Programa simple que procesa datos distribuidos usando como base el libro en txt, buscando cuantas veces se encuentra una palabra clave: 
    
    ```
-   spark-submit programa.py
+   spark-submit ocurrenciasDePalabra.py
    ```
    b. Programa que trabaja con operaciones básicas como map, filter y reduce. Usa tambien el libro:
 
