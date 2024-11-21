@@ -22,11 +22,10 @@ Para ejecutar los programas primero es necesario crear un cluster HDFS y subir l
   ```
   hdfs dfs -put <ruta-al-proyecto>/datafile/pilotos.csv /formula1
   ```
-5. Ejecutar el programa: 
+5. Ejecutar el programa. Se creara un archivo dentro de /formula1 llamado resultado_pilotos.csv.
   ```
-  spark-submit --master yarn race_results_analysis.py
+  spark-submit race_results_analysis.py
   ```
-  Se creara un archivo dentro de /formula1 llamado resultado_pilotos.csv.
 6. Utilizar la consola interactiva de pyspark para verificar los resultados.
 
 
