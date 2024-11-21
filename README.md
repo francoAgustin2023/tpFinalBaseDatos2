@@ -19,7 +19,6 @@ hdfs dfs -put <ruta-al-proyecto>/datafile/pilotos.csv /formula1
 5. Ejecutar el programa. Se creara un archivo dentro de /formula1 llamado resultado_pilotos.csv.
 ```
 spark-submit --master yarn race_results_analysis.py
-
 ```
 6. Utilizar la consola interactiva de pyspark para verificar los resultados.
 
