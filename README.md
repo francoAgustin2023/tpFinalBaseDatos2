@@ -43,7 +43,7 @@ Para ejecutar los programas primero es necesario crear un cluster HDFS y subir l
    c. Programa que realiza un análisis simple de un conjunto de datos de muestra. Usa un CCV con datos de Fórmula 1
 
    ```
-   spark-submit race_results_analysis.py
+   spark-submit championship_results_analysis.py
    ```
    Se creara un archivo dentro de /formula1 llamado resultado_pilotos.csv.
 6. Utilizar la consola interactiva de pyspark para verificar los resultados.
